@@ -1,0 +1,26 @@
+.screen {
+  position: relative;
+}
+
+.screen #self-introduction {
+  position: absolute;
+}
+
+img {
+  width: 50%;
+}
+
+button {
+  z-index: 6;
+}
+
+.screen h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.screen .me {
+  position: absolute;
+}
