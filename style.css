@@ -1,5 +1,7 @@
 .screen {
   position: relative;
+  top: 0;
+  left: 0;
 }
 
 .screen #self-introduction {
@@ -7,11 +9,18 @@
 }
 
 img {
-  width: 50%;
+  max-width: 100%;
+  float: left;
+  margin-right: auto;
+}
+
+.big-name {
+  position: absolute;
 }
 
 button {
   z-index: 6;
+  float: left;
 }
 
 .screen h1 {
