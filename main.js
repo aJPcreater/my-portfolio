@@ -22,8 +22,7 @@ me = [
 ];
 
 knowButton.onclick = function () {
-  const element = document.createElement("div");
-  element.setAttribute("class", "me");
+  const element = document.createElement("h3");
   if (count === 5) {
     const hobbies = document.getElementById("hobbies");
     hobbies.textContent += me[count];

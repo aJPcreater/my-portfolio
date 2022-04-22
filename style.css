@@ -1,15 +1,15 @@
 .screen {
+  width: 100%;
   position: relative;
-  top: 0;
   left: 0;
 }
 
-.screen #self-introduction {
-  position: absolute;
+.screen#self-introduction {
+  z-index: 2;
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   float: left;
   margin-right: auto;
 }
@@ -18,18 +18,21 @@ img {
   position: absolute;
 }
 
-button {
-  z-index: 6;
-  float: left;
+button#know-button {
+  z-index: 3;
+  position: absolute;
 }
 
-.screen h1 {
+.screen h1.big-name {
+  overflow-x: visible;
+  z-index: 1;
+  opacity: 0.5;
+  color: red;
+}
+.screen div#self-introduction {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 5;
 }
 
-.screen .me {
-  position: absolute;
+div.show {
+  background-color: whitesmoke;
 }
