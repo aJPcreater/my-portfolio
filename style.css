@@ -1,10 +1,13 @@
-.screen {
+.main-container {
   width: 100%;
   position: relative;
   left: 0;
 }
 
-.screen#self-introduction {
+.screen {
+  z-index: 1;
+}
+.show #self-introduction {
   z-index: 2;
 }
 
@@ -16,11 +19,7 @@ img {
 
 .big-name {
   position: absolute;
-}
-
-button#know-button {
-  z-index: 3;
-  position: absolute;
+  padding-left: 25px;
 }
 
 .screen h1.big-name {
@@ -33,6 +32,26 @@ button#know-button {
   position: absolute;
 }
 
-div.show {
-  background-color: whitesmoke;
+div.buttons {
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+  position: absolute;
+  left: 60vw;
+  top: 1vw;
+}
+
+div.buttons button {
+  width: 25vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  margin: 2vw 0px 2vw 0px;
+  font-size: 1.5vw;
+  opacity: 0.8;
+  background-color: rgb(199, 156, 156);
+  justify-content: space-between;
+}
+
+body {
+  margin: 0px;
 }

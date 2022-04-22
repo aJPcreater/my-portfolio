@@ -1,10 +1,10 @@
-const knowButton = document.getElementById("know-button");
+const myname = document.getElementById("myname");
 const selfIntroduction = document.getElementById("self-introduction");
 
 count = 0;
 
 me = [
-  "name: 長澤　達哉", // 0
+  "myname: 長澤　達哉", // 0
   "University: 立命館大学", // 1
   "Department/Subject/Course: 情報理工学部 / 情報理工学科 / 実世界情報コース",
   "prefecture: 京都府", // 2
@@ -21,7 +21,7 @@ me = [
   "ラグビー",
 ];
 
-knowButton.onclick = function () {
+myname.onclick = function () {
   const element = document.createElement("h3");
   if (count === 5) {
     const hobbies = document.getElementById("hobbies");
@@ -39,7 +39,7 @@ knowButton.onclick = function () {
     if (count === 15) {
       element.setAttribute("id", "mei");
       delete count;
-      knowButton.parentNode.removeChild(knowButton);
+      myname.parentNode.removeChild(myname);
     }
   }
   count++;
